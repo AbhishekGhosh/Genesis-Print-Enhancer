@@ -1,0 +1,39 @@
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .entry-content, .entry-content * {
+        visibility: visible;
+    }
+
+    .entry-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 210mm;
+        height: auto;
+        background: white;
+        background-image: url('<?php echo get_option("gpe_watermark_image"); ?>');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .entry-content::before {
+        content: "";
+        display: block;
+        background-image: url('<?php echo get_option("gpe_header_image"); ?>');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+    .gpe-print-btn {
+        display: none !important;
+    }
+}
