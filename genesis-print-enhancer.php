@@ -3,7 +3,7 @@
  * Plugin Name: Genesis Print Enhancer
  * Description: Adds A4 print functionality with header and watermark support for Genesis. Logs prints with device and IP. Includes shortcode and Font Awesome print icon.
  * Version: 1.0
- * Author: Your Name
+ * Author: Abhishek Ghosh
  */
 
 if (!defined('ABSPATH')) exit;
